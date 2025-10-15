@@ -1,3 +1,14 @@
+// File: src/database.cpp
+//
+// The Database class manages a collection of Record objects.
+// Features:
+// - CRUD operations (Create, Read, Update, Delete)
+// - Load and save to JSON file
+// - List all records
+// - Search, sort, and filter records
+// - Display statistics about the records
+// - Clear all records
+
 #include "../include/database.hpp"
 #include <fstream>
 #include <iostream>

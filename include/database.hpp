@@ -1,4 +1,4 @@
-#pragma oncde
+#pragma once
 #include "record.hpp"
 #include <vector>
 #include <optional>
@@ -22,6 +22,10 @@ public:
     bool updateRecord(const std::string& key, const Record::ValueType& newValue);
     bool deleteRecord(const std::string& key);
     std::optional<Record> getRecord(const std::string& key) const;
+
+    // operations on files
+    void save() const;
+    void load();
 
     // display
     void listAll() const;
